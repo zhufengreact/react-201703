@@ -2,6 +2,11 @@
 logs
 *.log
 npm-debug.log*
+.DS_Store
+/node_modules/*
+
+_babelcache.json
+root.log*
 
 # Runtime data
 pids
