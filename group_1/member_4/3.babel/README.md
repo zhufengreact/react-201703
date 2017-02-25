@@ -2,7 +2,6 @@
 
 ###### 课时1：1. babel介绍 03:36
 ```javascript
-    /*
      # babel
         ES6/7 -> ES5
 
@@ -20,14 +19,12 @@
             -gulp
             -elint
             -....
-    */
-
-
-
 ```
+
+
 ###### 课时2：2. babel的安装 10:20
 ```javascript
-    /*
+
      # 安装
         // 6.x
         npm install babel-cli -g                全局安装
@@ -71,14 +68,9 @@
 
         # babel-node 的应用
         $ bagel-node src/test.js
-
-     */
-
-
 ```
 ###### 课时3：3. 如何在babel使用预设 10:37
 ```javascript
-    /*
     ES6/7解析
 
     -plugin
@@ -144,15 +136,11 @@
                 "presets":["es2015","es2016"]
             }
 
-
-
-    */
-
 ```
 ###### 课时4：4. 如何使用babel插件 08:38
-```javascript
-    /*
-        # babel plugin
+```javascript  
+
+    # babel plugin
         -ES6
 
 
@@ -189,20 +177,11 @@
 
             配置 .babelrc文件
 
-
-
-
-
-
-
-    */
-
-
-
 ```
+
 ###### 课时5：5. 如何使用babel转换react语法 06:53
 ```javascript
-    /*
+
      # babel 解析 react jsx 语法
      -jsxtransformer.js
      -babel
@@ -237,6 +216,7 @@
 
 
       创建 index.html
+
           <!DOCTYPE html>
           <html lang="en">
           <head>
@@ -251,30 +231,12 @@
           </body>
           </html>
 
-    */
-
-
-
 ```
 ###### 课时6：6. 如何在gulp中使用babel 06:00
-```javascript
+```javascript   
     /*
     # babel
         -gulp
-        
-    */
-
-
-
-
-
+    */    
 ```
 ###### 课时7：react第二周测试题
-```javascript
-    /*
-
-    */
-
-
-
-```
