@@ -1,6 +1,7 @@
 /**
  * Created by dujingya on 17/2/26.
  */
+
 class asyncAction{
     sayHello(){
         this.hello().then(() => {
