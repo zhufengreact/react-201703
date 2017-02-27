@@ -38,3 +38,74 @@
 13 `git commit -m 'first commit'`将INDEX区的提交到本地库
 
 14 `git push origin group_4`往远程仓库的group_4分支push代码
+
+## 2017.02.26
+
+小伙伴也成功往仓库里提交代码，现在我想本地同步远程仓库，这样就可以在本地参考小伙伴的代码了👻
+
+1 先来个`git pull`试试
+```
+➜  group_4 git:(group_4) git pull
+remote: Counting objects: 20, done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 20 (delta 3), reused 20 (delta 3), pack-reused 0
+Unpacking objects: 100% (20/20), done.
+From github.com:Rococolate/react-201703
+   55a90ec..c538293  group_4    -> origin/group_4
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> group_4
+```
+
+git提示我有错，原因是没有指定本地group_4分支与远程origin/group_4分支的链接，根据提示，设置group_4和origin/group_4的链接
+
+2 `git branch --set-upstream-to=origin/group_4 group_4`
+
+```
+➜  group_4 git:(group_4) git branch --set-upstream-to=origin/group_4 group_4
+Branch group_4 set up to track remote branch group_4 from origin.
+```
+成功连接
+
+3 再次`git pull`
+```
+➜  group_4 git:(group_4) git pull
+Updating 55a90ec..c538293
+Fast-forward
+ group_4/member_18/1.atom/atom_learn.md           |  37 +++
+ group_4/member_18/2.github/github_learn.md       | 212 ++++++++++++++++
+ group_4/member_18/3.babel/.babelrc               |   3 +
+ group_4/member_18/3.babel/.gitignore             |   0
+ group_4/member_18/3.babel/README.md              | 242 +++++++++++++++++++
+ group_4/member_18/3.babel/babel_learn.js         | 194 +++++++++++++++
+ group_4/member_18/3.babel/dist/index.js          | 189 +++++++++++++++
+ group_4/member_18/3.babel/index.html             |  13 +
+ group_4/member_18/3.babel/package.json           |  18 ++
+ group_4/member_18/3.babel/src/index.js           | 203 ++++++++++++++++
+ .../function-programming_learn.md                | 164 +++++++++++++
+ group_4/member_18/profile.txt                    |   3 +
+ 12 files changed, 1278 insertions(+)
+ create mode 100644 group_4/member_18/1.atom/atom_learn.md
+ create mode 100644 group_4/member_18/2.github/github_learn.md
+ create mode 100644 group_4/member_18/3.babel/.babelrc
+ create mode 100644 group_4/member_18/3.babel/.gitignore
+ create mode 100644 group_4/member_18/3.babel/README.md
+ create mode 100644 group_4/member_18/3.babel/babel_learn.js
+ create mode 100644 group_4/member_18/3.babel/dist/index.js
+ create mode 100644 group_4/member_18/3.babel/index.html
+ create mode 100644 group_4/member_18/3.babel/package.json
+ create mode 100644 group_4/member_18/3.babel/src/index.js
+ create mode 100644 group_4/member_18/9.js-functional-programming/function-programming_learn.md
+ create mode 100644 group_4/member_18/profile.txt
+```
+成功拉取代码👻
+
+
+
+
