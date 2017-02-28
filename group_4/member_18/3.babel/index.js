@@ -1,3 +1,7 @@
+/*
+ 1. 创建一类 名为 asyncAction
+ 2. 类里面又创建了三个方法
+ */
 class asyncAction{
     sayHello(){
         this.hello().then(() => {

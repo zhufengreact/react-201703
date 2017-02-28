@@ -59,32 +59,6 @@
 
 ###### 课时3：git的基本操作
 ```
-
-
-第一步：注册
-
-    1. github的注册
-            01. 在浏览器地址栏中输入：https://github.com/join
-            02. 注册信息输入
-                Username: 输入用户名"只能是英文和数字"
-                Email Address: 输入邮箱地址
-                Password: 输入密码
-            03. Create an account 点击创建
-
-    2. 创建仓库           
-
-        01.点击右边的的按钮：New repository
-        02.创建项目、目录
-            Repository name： 以下的input框中输入项目、目录的名字为英文
-            Description (optional)：描述项目的说明
-            Public：选择公开的
-            Initialize this repository with a README：这里如果选择上了，就会在你的项目下面创建两个文件
-        03.Create repository  点击 创建库
-
-        04.克隆项目地址下来
-            $ git clone https://github.com/Rococolate/react-201703.git  这里要克隆项目的路径
-
-
 01. git安装和基本使用
     -下载:http://git-scm.com/downloads
 
@@ -229,6 +203,11 @@
 
         06. 拉取 develop 的分支内容下来
             $ git pull origin develop
+
+
+
+
+
 
 
 ```
