@@ -1,0 +1,27 @@
+1. Clone remote repository
+   git clone https://github.com/wangzhengbo/react-201703.git
+   
+2. cd react-201703
+
+3. Create branch and switch to current created branch
+   git checkout -b group_2
+   
+3. Create dir for our group
+   mkdir group_2
+
+4. cd group_2
+
+5. Create dir for myself
+   mkdir member_9
+
+6. cd member_9
+
+7. Create file profile.txt, modify it and then add it to git's index
+   touch profile.txt
+   git add profile.txt
+
+8. Commit
+   git commit -m "Add profile.txt"
+   
+9. Push branch group_2 to remote repository
+   git push origin group_2
