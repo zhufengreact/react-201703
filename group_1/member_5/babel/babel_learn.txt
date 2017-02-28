@@ -1,0 +1,24 @@
+最新下载的babel依赖版本是
+"devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2015-loose": "^8.0.0"
+  }
+  如果在.babelrc里设置
+  {
+  "presets":["es2015"]
+  }和
+  {
+  "presets":["es2015-loose"]
+  }
+  并没有区别，要改成下面这样才是用prototype方式定义方法
+  {
+  "presets":[["es2015", {
+      "loose":true
+    }]]
+}
+
+
+
+modules:
+"amd" | "umd" | "systemjs" | "commonjs" | false, defaults to "commonjs".
