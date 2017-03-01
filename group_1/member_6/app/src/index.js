@@ -1,15 +1,9 @@
 /**
- * Created by dujingya on 17/2/28.
+ * Created by dujingya on 17/3/1.
  */
+// var comp=require('./component.js');
+// console.log(comp.name);
 
-function f1() {
-    let n=5;
-    if(true){
-        let n=10;
-    }
-    console.log(n)
+import {name} from './component';
 
-    var [foo,bar,less]=[2,3,4];
-    console.log(foo,bar,less);
-}
-f1();
+console.log(name);
