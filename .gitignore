@@ -35,6 +35,9 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
 .iml
 .idea
 react-201703.iml
+.DS_Store
+
