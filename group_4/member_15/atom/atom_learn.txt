@@ -1,5 +1,0 @@
-1. Find github location url
-2. cd ~/.atom/packages
-3. git clone package-repo
-4. cd packages-repo
-5. npm install
