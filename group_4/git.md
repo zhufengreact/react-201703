@@ -106,6 +106,23 @@ Fast-forward
 ```
 成功拉取代码👻
 
+## 2017.03.05
 
+### 第一次 pull request
+
+小组的同学都提交作业完毕，现在来进行 第一次 激动人心的 **pull request**
+
+1.首先来到仓库首页的 **Pull requests**栏 点击 *New pull request*按钮
+![enter image description here](http://rococolate.github.io/blog/images/github/WechatIMG6.jpeg)
+
+2.选好要Pull进的分支Master 和我们的分支group_4
+![enter image description here](http://rococolate.github.io/blog/images/github/WechatIMG11.jpeg)
+
+3.点击*Create pull request*按钮
+
+4.检查diff和填写commit并提交！
+
+5.成功并等待老师合并
+![enter image description here](http://rococolate.github.io/blog/images/github/WechatIMG31.jpeg)
 
 
