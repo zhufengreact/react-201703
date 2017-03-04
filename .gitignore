@@ -1,21 +1,15 @@
-<<<<<<< HEAD
-=======
-
 # Created by .ignore support plugin (hsz.mobi)
 
->>>>>>> ca3023cc21e52e79cde9f4419ce5fcddc7e1ad0b
 # Logs
 logs
 *.log
 npm-debug.log*
-<<<<<<< HEAD
+
 .DS_Store
 /node_modules/*
 
 _babelcache.json
 root.log*
-=======
->>>>>>> ca3023cc21e52e79cde9f4419ce5fcddc7e1ad0b
 
 # Runtime data
 pids
@@ -49,14 +43,13 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
-<<<<<<< HEAD
+
 .iml
 .idea
 react-201703.iml
-=======
+
 
 .idea
 .DS_Store
 /node_modules/*
 
->>>>>>> ca3023cc21e52e79cde9f4419ce5fcddc7e1ad0b
