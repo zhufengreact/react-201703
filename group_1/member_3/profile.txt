@@ -2,4 +2,6 @@
 github：ZhuPoLiang
 E-mail: z170025481@hotmail.com
 
+webpack github地址：https://github.com/ZhuPoLiang/webpack
+
 期望：进一步加深React在实际项目中的运用
