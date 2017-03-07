@@ -1,0 +1,16 @@
+{
+  "name": "babel",
+  "version": "1.0.0",
+  "description": "babel traning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "babel homework.js --out-file babel/babel_learn.js -w"
+  },
+  "author": "wuazhu",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0"
+  }
+}
