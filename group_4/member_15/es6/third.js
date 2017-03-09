@@ -9,7 +9,7 @@ function count(num = 0){
 
   if (num > MAX) {
     return false
-  }else{
+  }else if(num > 0){
     console.log(num)
   }
 
