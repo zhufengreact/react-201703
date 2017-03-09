@@ -21,6 +21,7 @@ function Animal( name, gender, age ){
   this.age = age;
 }
 
+//Animal getInfo function
 Animal.prototype.getInfo = function(){
     console.log("A " + this.age + " years old " + this.gender + " " + this.name);
 }

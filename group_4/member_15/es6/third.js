@@ -13,6 +13,7 @@ function count(num = 0){
     console.log(num)
   }
 
+  //print number from 1 to 10 every one sec
   setTimeout(()=> count(++num),1000)
 
 }
