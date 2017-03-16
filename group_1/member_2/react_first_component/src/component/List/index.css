@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+}
+button{
+    position: absolute;
+    font-size: 18px;
+    top: 15px;
+    right: 60px;
+    padding: 5px;
+}
+input{
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 20px;
+}
+select{
+    font-size: 20px;
+    padding: 5px;
+}
+.edit_state,.content_open_close{
+    display: none;
+}
+.edit_state_open,.content_open{
+    display: block;
+}
