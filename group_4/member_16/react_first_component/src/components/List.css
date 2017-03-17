@@ -1,0 +1,11 @@
+.li{
+  text-align: center;
+  list-style: none;
+  position: relative;
+}
+
+.button{
+  position: absolute;
+  top:0;
+  right: 0;
+}
