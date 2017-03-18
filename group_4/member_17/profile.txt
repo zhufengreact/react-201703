@@ -3,6 +3,7 @@ github：alicePan
 email：1286874200@qq.com
 
 
+第二周作业：
 webpack config:
   https://github.com/alicePan/react-course/blob/master/biolerplate/webpack.config.js
 
