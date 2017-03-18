@@ -23,12 +23,14 @@ const data = [
 let id = 4;
 
 export default class App extends Component {
+  
   constructor(){
     super();
     this.state = { 
       data
     }
   }
+
   update = (id,content,bgColor) =>{
     let data = this.state.data.map( item => {
       if (item.id === id) {
@@ -41,6 +43,7 @@ export default class App extends Component {
       data
     });
   }
+
   del = (id) => {
     let data = this.state.data.filter( item => {
       if (item.id !== id) {
@@ -51,6 +54,7 @@ export default class App extends Component {
       data
     });
   }
+
   add = () => {
     let data = this.state.data.map( item => item);
     data.push({

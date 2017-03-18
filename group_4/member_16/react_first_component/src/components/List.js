@@ -1,6 +1,8 @@
 import React, { Component, Children } from "react";
 import "./List.css";
+
 export default class List extends Component {
+
   constructor(){
     super();
     this.state = { 
@@ -11,15 +13,14 @@ export default class List extends Component {
       selectColor:'red',
     }
   }
+
   componentWillMount(){
-    console.log(this.props);
     let { type } = this.props;
-    let _type;
     if ( type === 'edit' ) {
       this.changeType();
     } 
-
   }
+
   changeType = (e) => {
     let _type;
     let display0;
@@ -38,7 +39,6 @@ export default class List extends Component {
       display1 = 'none';
       this.props.update(this.props.id,this.state.inputName,this.state.selectColor);
     }
-
     this.setState({
       _type,
       display0,
@@ -46,7 +46,6 @@ export default class List extends Component {
       inputName,
       selectColor,
     });
-
   }
 
   changeColor = (e) => {
@@ -80,6 +79,7 @@ export default class List extends Component {
       </li>
     )
   } 
+
 }
 
 List.defaultProps = {
