@@ -1,4 +1,4 @@
-import React, { Component, Children } from "react";
+import React, { Component, PropTypes } from "react";
 import "./List.css";
 
 export default class List extends Component {
@@ -71,7 +71,11 @@ export default class List extends Component {
       <li className="li" style={{backgroundColor:bgColor}}>
         <span style={{display:display0}}>&nbsp; {content}</span>
         <input style={{display:display1}} value={inputName} type="text" onChange={this.changeName} />
-        <select style={{display:display1}} value={selectColor} onChange={this.changeColor}><option value="red">red</option><option value="blue">blue</option><option value="green">green</option></select>
+        <select style={{display:display1}} value={selectColor} onChange={this.changeColor}>
+          <option value="red">red</option>
+          <option value="blue">blue</option>
+          <option value="green">green</option>
+        </select>
         <div className="button">
           <button onClick={this.changeType}>{this.state._type}</button>
           <button onClick={this.del}>删除</button>
@@ -80,6 +84,10 @@ export default class List extends Component {
     )
   } 
 
+}
+
+List.propTypes = {
+  id: PropTypes.number.isRequired,
 }
 
 List.defaultProps = {
