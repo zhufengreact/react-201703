@@ -1,0 +1,48 @@
+.m-lists {
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+    .list-item {
+        height: 44px;
+        margin-bottom: 10px;
+        line-height: 44px;
+        &.red {
+            background-color: red;
+        }
+        &.blue {
+            background-color: blue;
+        }
+        &.green {
+            background-color: green;
+        }
+        &.is-editing {
+            .ctn {
+                width: 12%;
+            }
+            .edit-box {
+                display: inline-block;
+                width: 40%;
+            }
+        }
+    }
+    .ctn {
+        display: inline-block;
+        width: 62%;
+        text-align: center;
+    }
+    .btn {
+        display: inline-block;
+        width: 18%;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        text-align: center;
+        &.btn-del {
+            width: 44px;
+        }
+    }
+    .edit-box {
+        display: none;
+        text-align: center
+    }
+}

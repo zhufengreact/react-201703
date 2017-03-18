@@ -10,3 +10,16 @@ webpack config:
 第三周作业：
 - 组件路径： https://github.com/alicePan/react-course/tree/master/biolerplate/src/components/Lists
 - 入口启动文件：https://github.com/alicePan/react-course/blob/master/biolerplate/src/entries/zhufeng.js
+- 作业文件目录：
+    react-201703/group_4/member_17/biolerplate/src/components/Lists/index.js
+- 入口文件：
+   react-201703/group_4/member_17/biolerplate/entries/zhufeng.js
+- 使用方法：
+进入  react-201703/group_4/member_17/biolerplate， 然后执行
+```bash
+npm run dev
+```
+编译完毕后，浏览器中访问页面：
+```code
+http://localhost:9000/zhufeng.html
+```
