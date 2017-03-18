@@ -5,3 +5,7 @@ email：1286874200@qq.com
 
 webpack config:
   https://github.com/alicePan/react-course/blob/master/biolerplate/webpack.config.js
+
+第三周作业：
+- 组件路径： https://github.com/alicePan/react-course/tree/master/biolerplate/src/components/Lists
+- 入口启动文件：https://github.com/alicePan/react-course/blob/master/biolerplate/src/entries/zhufeng.js
