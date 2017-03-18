@@ -1,0 +1,15 @@
+/*!
+ * 作者： wgx
+ * 日期：1489806612864
+ */
+.li{
+  text-align: center;
+  list-style: none;
+  position: relative;
+}
+
+.button{
+  position: absolute;
+  top:0;
+  right: 0;
+}
