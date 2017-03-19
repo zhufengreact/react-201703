@@ -30,7 +30,7 @@ class ListProfile extends Component{
     let type,
         displayStatus1,
         displayStatus2,
-        inputPH,
+        inputPH='',
         colorSelect;
     if(this.state.type === 'Edit'){
       type = 'Save';
