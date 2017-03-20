@@ -69,8 +69,8 @@ export default class App extends Component {
   }
 
   render (){
-    let lists = this.state.data.map( (item,index) => {
-      return <List type={item.type} key={index} bgColor={item.bgColor} content={item.content} id={item.id} update={this.update} del={this.del}/>
+    let lists = this.state.data.map( (item) => {
+      return <List type={item.type} key={item.id} bgColor={item.bgColor} content={item.content} id={item.id} update={this.update} del={this.del}/>
     });
     return (
       <div>
