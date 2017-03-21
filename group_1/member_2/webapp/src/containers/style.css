@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.active{
+    font-size: 4rem;
+    color: #f00;
+}
+.ul-node{
+    position: fixed;
+    bottom: 0;
+    border-top: .25rem solid #eee;
+    width: 100%;
+}
+.container{
+    font-size: 5rem;
+}
+.container ul li{
+    font-size: 4rem;
+}
+.ul-node li{
+    padding-top: 1rem;
+    list-style: none;
+    font-size: 4rem;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.ul-node li a{
+    text-decoration: none;
+}
