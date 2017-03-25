@@ -1,0 +1,16 @@
+
+
+.list {
+  position: relative;
+
+  width: 500px;
+  height: 50px;
+
+  text-align: center;
+  list-style-type: none;
+  line-height: 50px;
+}
+
+.btn-group {
+  float: right;
+}

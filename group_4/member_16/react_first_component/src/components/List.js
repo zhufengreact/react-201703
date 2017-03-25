@@ -33,19 +33,24 @@ export default class List extends Component {
       display1 = 'inline';
       inputName = this.props.content;
       selectColor = this.props.bgColor;
+      this.setState({
+        _type,
+        display0,
+        display1,
+        inputName,
+        selectColor,
+      });
     } else {
       _type = '编辑';
       display0 = 'inline';
       display1 = 'none';
+      this.setState({
+        _type,
+        display0,
+        display1,
+      });
       this.props.update(this.props.id,this.state.inputName,this.state.selectColor);
     }
-    this.setState({
-      _type,
-      display0,
-      display1,
-      inputName,
-      selectColor,
-    });
   }
 
   changeColor = (e) => {
