@@ -28,7 +28,7 @@ export default class App extends Component {
     super();
     this.state = { 
       data
-    }
+    };
   }
 
   update = (id,content,bgColor) =>{
