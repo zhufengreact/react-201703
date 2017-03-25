@@ -1,6 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
-
+var uglifyPlugin = webpack.optimize.UglifyJsPlugin;
 module.exports = {
   entry: './index.js',
   output: {
@@ -19,5 +19,10 @@ module.exports = {
         loader: 'style!css'
       }
     ]
-  }
+  },
+  plugins: [
+    new uglifyPlugin({
+      compress: false
+    })
+  ]
 }
