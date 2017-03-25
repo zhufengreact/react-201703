@@ -23,3 +23,12 @@ npm run dev
 ```code
 http://localhost:9000/zhufeng.html
 ```
+
+###第四周作业
+项目地址：https://github.com/alicePan/react-course/tree/master/biolerplate/src/views/zhufeng
+入口文件路径：https://github.com/alicePan/react-course/blob/master/biolerplate/src/views/zhufeng/entry.js
+实现功能的组件的路径：https://github.com/alicePan/react-course/tree/master/biolerplate/src/views/zhufeng/homework4
+使用方式:
+- 进入文件夹：https://github.com/alicePan/react-course/tree/master/biolerplate/
+- npm run dev
+- 浏览器中打开: localhost:9000/zhufeng.html
