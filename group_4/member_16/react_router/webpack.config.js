@@ -22,7 +22,8 @@ module.exports = {
   },
   plugins: [
     new uglifyPlugin({
-      compress: false
+      compress: {
+        warnings:false}
     })
   ]
 }

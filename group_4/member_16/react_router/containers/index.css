@@ -55,6 +55,6 @@ h1{
   border-right: 1px solid #000;
 }
 
-a.tab-item-act{
+.tab-item a.tab-item-act{
   color:red;
 }

@@ -4,7 +4,7 @@
   "description": "React Router",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --colors -p",
     "start": "webpack-dev-server --inline --content-base . --history-api-fallback"
   },
   "keywords": [],
