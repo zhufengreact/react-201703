@@ -1,10 +1,10 @@
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import gopherReducer from '../reducers/gopherReducer';
+import rootReducer from '../reducers/index';
 
 export default function configureStore(initialState) {
     const store = createStore(
-        gopherReducer,
+        rootReducer,
         initialState,
         applyMiddleware(thunk)
     );
