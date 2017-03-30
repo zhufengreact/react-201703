@@ -1,0 +1,21 @@
+#app{
+    width: 360px;
+    height: 360px;
+    padding: 0;
+    margin: 150px auto;
+}
+.box{
+    width: 120px;
+    height: 120px;
+    border: solid 1px black;
+}
+
+.box:hover{
+    cursor:pointer;
+}
+
+.boxNull{
+    width: 120px;
+    height: 120px;
+    border: solid 1px black;
+}
