@@ -1,0 +1,45 @@
+.m-lists {
+  list-style: none;
+  color: #fff;
+  font-size: 14px;
+}
+.m-lists .list-item {
+  height: 44px;
+  line-height: 44px;
+}
+.m-lists .list-item.red {
+  background-color: red;
+}
+.m-lists .list-item.blue {
+  background-color: blue;
+}
+.m-lists .list-item.green {
+  background-color: green;
+}
+.m-lists .list-item.is-editing .ctn {
+  width: 40%;
+}
+.m-lists .list-item.is-editing .edit-box {
+  display: inline-block;
+  width: 40%;
+}
+.m-lists .ctn {
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+}
+.m-lists .btn {
+  display: inline-block;
+  width: 18%;
+  color: #fff;
+  text-align: right;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+}
+.m-lists .btn.btn-edit {
+  text-align: right;
+}
+.m-lists .edit-box {
+  display: none;
+}

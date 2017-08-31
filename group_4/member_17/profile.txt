@@ -1,0 +1,34 @@
+名字：zhanglongdong
+github：alicePan
+email：1286874200@qq.com
+
+
+第二周作业：
+webpack config:
+  https://github.com/alicePan/react-course/blob/master/biolerplate/webpack.config.js
+
+第三周作业：
+- 组件路径： https://github.com/alicePan/react-course/tree/master/biolerplate/src/components/Lists
+- 入口启动文件：https://github.com/alicePan/react-course/blob/master/biolerplate/src/entries/zhufeng.js
+- 作业文件目录：
+    react-201703/group_4/member_17/biolerplate/src/components/Lists/index.js
+- 入口文件：
+   react-201703/group_4/member_17/biolerplate/entries/zhufeng.js
+- 使用方法：
+进入  react-201703/group_4/member_17/biolerplate， 然后执行
+```bash
+npm run dev
+```
+编译完毕后，浏览器中访问页面：
+```code
+http://localhost:9000/zhufeng.html
+```
+
+###第四周作业
+项目地址：https://github.com/alicePan/react-course/tree/master/biolerplate/src/views/zhufeng
+入口文件路径：https://github.com/alicePan/react-course/blob/master/biolerplate/src/views/zhufeng/entry.js
+实现功能的组件的路径：https://github.com/alicePan/react-course/tree/master/biolerplate/src/views/zhufeng/homework4
+使用方式:
+- 进入文件夹：https://github.com/alicePan/react-course/tree/master/biolerplate/
+- npm run dev
+- 浏览器中打开: localhost:9000/zhufeng.html

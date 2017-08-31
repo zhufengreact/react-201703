@@ -1,0 +1,175 @@
+import React, { Component, Children } from "react";
+import ReactDOM, { render } from 'react-dom';
+
+import './index';
+
+const data = [
+    {
+        id: 1,
+        content: 'zhufeng',
+        bgColor: 'red'
+    },
+    {
+        id: 2,
+        content: 'react',
+        bgColor: "blue"
+    },
+    {
+        id: 3,
+        content: 'component',
+        bgColor: 'green'
+    }
+]
+
+let id = 4;
+class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      data
+    }
+  }
+
+  update = (id,content,bgColor) =>{
+    let data = this.state.data.map( item => {
+      if (item.id === id) {
+        item.content = content,
+        item.bgColor = bgColor
+      }
+      return item;
+    });
+    this.setState({
+      data
+    });
+  }
+
+  del = (id) => {
+    let data = this.state.data.filter( item => {
+      if (item.id !== id) {
+        return item;
+      }
+    });
+    this.setState({
+      data
+    });
+  }
+
+  add = () => {
+    let data = this.state.data.map( item => item);
+    data.push({
+      id: id ++,
+      content: '',
+      bgColor: 'red',
+      type: 'edit'
+    });
+    this.setState({
+      data
+    });
+  }
+
+  render (){
+    let lists = this.state.data.map( (item,index) => {
+      return <List type={item.type} key={index} bgColor={item.bgColor} content={item.content} id={item.id} update={this.update} del={this.del}/>
+    });
+    return (
+      <div>
+        <ul>{List}</ul>
+        <button onClick={this.add}>新增</button>
+      </div>
+    );
+  }
+};
+class List extends Component {
+
+  constructor(){
+    super();
+    this,state={
+      _type:'编辑',
+      display0:'inline',
+      display1:'none',
+      inputName:'',
+      selectColor:'red'
+    }
+  }
+  componentWillMount(){
+   let { type } = this.props;
+   if ( type === 'edit' ) {
+     this.changeType();
+   }
+ }
+
+ changeType = (e) => {
+   let _type;
+   let display0;
+   let display1;
+   let inputName;
+   let selectColor;
+   if ( this.state._type === '编辑' ){
+     _type = '保存';
+     display0 = 'none';
+     display1 = 'inline';
+     inputName = this.props.content;
+     selectColor = this.props.bgColor;
+   } else {
+     _type = '编辑';
+     display0 = 'inline';
+     display1 = 'none';
+     this.props.update(this.props.id,this.state.inputName,this.state.selectColor);
+   }
+   this.setState({
+     _type,
+     display0,
+     display1,
+     inputName,
+     selectColor,
+   });
+ }
+
+ changeColor = (e) => {
+   this.setState({
+     selectColor: e.target.value
+   });
+ }
+
+ changeName = (e) => {
+   this.setState({
+     inputName: e.target.value
+   });
+ }
+
+ del = (e) => {
+   this.props.del(this.props.id);
+ }
+
+  //dingyi
+  render(){
+    let { content, bgColor ,type } = this.props;
+    let { display1, display0, inputName, selectColor } = this.state;
+    return(
+      <div className="app" style={{backgroundColor:bgColor}}>
+         <span style={{display:display0}}>&nbsp; {content}</span>
+         <input style={{display:display1}} value={inputName} type="text" onChange={this.changeName} />
+         <select style={{display:display1}} value={selectColor} onChange={this.changeColor}>
+           <option value="red">red</option>
+           <option value="blue">blue</option>
+           <option value="green">green</option>
+         </select>
+         <div className="button">
+           <button onClick={this.changeType}>{this.state._type}</button>
+           <button onClick={this.del}>删除</button>
+         </div>
+       </div>
+    )
+  }
+}
+List.propTypes = {
+  id: PropTypes.number.isRequired,
+}
+
+List.defaultProps = {
+  content: '',
+  bgColor: 'red',
+  type:'save'
+}
+render(<App />,document.getElementById("app"))
