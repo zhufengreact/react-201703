@@ -1,0 +1,83 @@
+.hamster-game {
+  .hide {
+    display: none;
+  }
+
+  &.game-over {
+    table tbody tr td.hamster {
+      img {
+        /* http://stackoverflow.com/questions/19262472/how-can-i-disable-the-color-of-an-image-using-css */
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+      }
+    }
+  }
+
+  &:not(.game-over) {
+    table tbody tr td.hamster {
+      &.displayed:not(.hitted) {
+        cursor: pointer;
+      }
+    }
+  }
+
+  table {
+    tbody {
+      tr {
+        &:first-child {
+          td {
+            border-top: 1px solid green;
+          }
+        }
+
+        td.hamster {
+          border-right: 1px solid green;
+          border-bottom: 1px solid green;
+          width: 150px;
+          height: 150px;
+
+          &:first-child {
+            border-left: 1px solid green;
+          }
+        }
+      }
+    }
+
+    tfoot tr td {
+      padding-top: 10px;
+      text-align: center;
+
+      .round {
+        font-size: 30px;
+        .current-round, .number-of-rounds {
+          color: blue;
+          font-size: 40px;
+          font-weight: bold;
+        }
+      }
+
+      .message {
+        font-size: 40px;
+        font-weight: bold;
+
+        .success {
+          color: green;
+        }
+
+        .failed {
+          color: red;
+        }
+      }
+
+      button {
+        padding: 5px 10px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}

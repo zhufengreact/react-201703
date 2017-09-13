@@ -1,0 +1,35 @@
+{
+  "name": "react_homework",
+  "version": "1.0.0",
+  "description": "react homework - 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --progress --colors",
+    "dev": "webpack-dev-server --progress --colors --watch --hot --port 8092"
+  },
+  "author": "rachel184ever",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-loader": "^6.4.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.26.2",
+    "eslint": "^3.17.1",
+    "eslint-loader": "^1.6.3",
+    "eslint-plugin-react": "^6.10.0",
+    "html-loader": "^0.4.5",
+    "karma": "^1.5.0",
+    "less": "^2.7.2",
+    "less-loader": "^3.0.0",
+    "mocha": "^3.2.0",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
